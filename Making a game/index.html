@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lost Dingo</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="game">
+
+        <h1>Lost Dingo</h1>
+
+        <div class="stats">
+            <h2>Starkk</h2>
+
+            <p>HP: <span id="playerHp">4012</span></p>
+            <p>Level: <span id="playerLevel">1</span></p>
+            <p>XP: <span id="playerXp">0 / 100</span></p>
+        </div>
+
+        <div class="actions">
+            <button id="moveBtn">Move</button>
+            <button id="attackBtn">Attack</button>
+            <button id="specialBtn">Telekinesis</button>
+            <button id="ultimateBtn">Cascading Junk Pile</button>
+            <button id="absorbBtn">Absorb</button>
+            <button id="blockBtn">Block</button>
+            <button id="runBtn">Run</button>
+            <button id="retryBtn">Retry</button>
+        </div>
+
+        <div class="ultimate">
+            <p>Ultimate: <span id="ultimateMeter">0 / 100</span></p>
+
+            <div class="ultimate-bar">
+                <div id="ultimateFill"></div>
+            </div>
+        </div>
+
+        <div class="battle-log">
+            <h2>Battle Log</h2>
+            <div id="log"></div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

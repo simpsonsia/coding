@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    background: hsl(0, 2%, 37%);
+    color: #ddd;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #b30000;
+    font-size: 42px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #500000;
+}
+
+body > h2 {
+    text-align: center;
+    color: hsl(0, 0%, 6%);
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.box {
+    background: #151515;
+    border: 1px solid #444;
+    border-left: 4px solid #8b0000;
+    padding: 25px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.box h2 {
+    margin-top: 0;
+    color: #cfcfcf;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.box p {
+    border-bottom: 1px solid #292929;
+    padding-bottom: 8px;
+}
+
+button {
+    background: #1c1c1c;
+    color: #ddd;
+    border: 1px solid #555;
+    padding: 12px 18px;
+    margin: 5px 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #700000;
+    border-color: #b30000;
+    color: white;
+    box-shadow: 0 0 10px rgba(180, 0, 0, 0.5);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+#userLife,
+#zombieLife {
+    color: #e00000;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#userXP {
+    color: #d6a800;
+}
+
+#userMeds {
+    color: #5dbb63;
+}
+
+.log {
+    max-width: 1100px;
+    margin: auto;
+    background: #090909;
+    border: 1px solid #333;
+    padding: 20px;
+    height: 250px;
+    overflow-y: auto;
+}
+
+.log h2 {
+    margin-top: 0;
+    color: #8b0000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#logMessages p {
+    margin: 6px 0;
+    color: #999;
+    font-family: monospace;
+}
+
+@media (max-width: 700px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    button {
+        width: 100%;
+    }
+}

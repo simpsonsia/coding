@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zombie Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>Zombie Game</h1>
+    <h2>Can You Defeat the Zombie?</h2>
+
+    <div class="container">
+
+        <div class="box" id="userBox">
+            <h2>User</h2>
+
+            <p>Name: <span id="userName">Leon S Kennedy</span></p>
+            <p>Life: <span id="userLife">100</span></p>
+            <p>Meds: <span id="userMeds">3</span></p>
+            <p>Clean Strikes: <span id="comboCount">0</span></p>
+
+            <button onclick="userMove()">Move</button>
+            <button onclick="userAttack()">Knife Attack</button>
+            <button onclick="useMeds()">Use Meds</button>
+            <button onclick="specialAttack()">Use Handgun</button>
+            <button onclick="comboAttack()">Clean Strike</button>
+            <button onclick="userParry()">Parry</button>
+            <button onclick="userRequiem()">Use Requiem</button>
+        </div>
+
+        <div class="box" id="zombieBox">
+            <h2>Zombie</h2>
+
+            <p>Name: <span id="zombieName">Zombie</span></p>
+            <p>Life: <span id="zombieLife">150</span></p>
+            <p>Type: <span id="zombieType">Tank</span></p>
+
+            <button onclick="zombieScratch()">Scratch</button>
+            <button onclick="zombieBite()">Bite</button>
+            <button onclick="zombieTackle()">Tackle</button>
+        </div>
+
+    </div>
+
+    <div class="turn">
+        <h2>Battle</h2>
+
+        <p>Leon: <span id="userChoice">No action selected</span></p>
+        <p>Zombie: <span id="zombieChoice">No action selected</span></p>
+
+        <button onclick="resolveTurn()">Resolve Turn</button>
+    </div>
+
+    <div class="log" id="gameLog">
+        <h2>Game Log</h2>
+        <div id="logMessages"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
